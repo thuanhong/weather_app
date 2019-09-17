@@ -81,7 +81,7 @@ export default class App extends Component {
   }
 
   SyncDatabyID() {
-    fetch('http://api.openweathermap.org/data/2.5/weather?id=' + this.state.selected_id + '&APPID=8d988ff56fe16924285c8bd3e93497d4&units=metric', {
+    fetch('http://api.openweathermap.org/data/2.5/weather?id=' + this.state.selected_id + '&APPID=[API_KEY_WEATHERMAP]&units=metric', {
       method: 'GET',
       headers: {
         'Accept': 'application/json',
